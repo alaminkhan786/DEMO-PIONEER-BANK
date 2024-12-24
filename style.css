@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* firstContainer Start*/
+
+.first{
+    width: 1000px;
+    background-color: white;
+}
+
+h1{
+    width: fit-content;
+    margin: auto;
+    padding-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.1em;
+    width: 100%;
+    background-color: tomato;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 1;
+    transition: transform 300ms;
+}
+
+h1:hover::after,
+h1:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+
+#bootstrapForm{
+    padding: 40px;
+}
+
+/* firstContainer End*/
+
+/* secondContainer Start*/
+
+.second{
+    display: none;
+}
+
+/* secondContainer Start*/
