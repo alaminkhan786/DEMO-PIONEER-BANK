@@ -13,7 +13,7 @@
     background-color: white;
 }
 
-h1{
+.heading{
     width: fit-content;
     margin: auto;
     padding-top: 30px;
@@ -21,7 +21,7 @@ h1{
     overflow: hidden;
 }
 
-h1::after{
+.heading::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -34,13 +34,13 @@ h1::after{
     transition: transform 300ms;
 }
 
-h1:hover::after,
-h1:focus::after {
+.heading:hover::after,
+.heading:focus::after {
   transform: translate3d(0, 0, 0);
 }
 
-#bootstrapForm{
-    padding: 40px;
+.text-area{
+    padding: 35px;
 }
 
 /* firstContainer End*/
@@ -52,3 +52,24 @@ h1:focus::after {
 }
 
 /* secondContainer Start*/
+
+.cell{
+    color: white;
+    margin: 20px;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#deposit-cell{
+    background-color: rgb(255, 77, 6);
+}
+
+#withdraw-cell{
+    background-color: rgb(19, 6, 255);
+}
+
+#balance-cell{
+    background-color: slateblue;
+}
+

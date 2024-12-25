@@ -10,24 +10,59 @@
 <body>
     <div class="container">
         <div class="first shadow-lg bg-body-tertiary rounded" id="firstContainer">
-            <h1>Demo Piyoneer Bank</h1>
-            <form id="bootstrapForm">
+            <h1 class="heading">Welcome to Piyoneer Bank</h1>
+            <div class="text-area">
                 <div class="mb-3">
-                  <h6>Email address</h6>
-                  <input type="email" class="form-control" placeholder="Write an email here...">
+                    <h6>Email address</h6>
+                    <input type="email" class="form-control" placeholder="Write an email here...">
                 </div>
 
                 <div class="mb-3">
-                  <h6>Password</h6>
-                  <input type="password" class="form-control" placeholder="Enter a strong Password...">
+                    <h6>Password</h6>
+                    <input type="password" class="form-control" placeholder="Enter a strong Password...">
                 </div>
 
                 <button type="submit" id="button" class="btn btn-success">Submit</button>
-            </form>
+            </div>
         </div>
 
         <div class="second" id="secondContainer">
-            <h1>This page is under constraction!</h1>
+
+            <div class="row">
+                <div id="deposit-cell" class="col-md-4 cell">
+                    <h4>Deposit</h4>
+                    <h1>$<span id="totalDepositAmount">00</span></h1>
+                </div>
+                <div id="withdraw-cell" class="col-md-4 cell">
+                    <h4>Withdraw</h4>
+                    <h1>$<span id="totalWithdrawAmount">00</span></h1>
+                </div>
+                <div id="balance-cell" class="col-md-4 cell">
+                    <h4>Balance</h4>
+                    <h1>$<span id="totalBalance">1240</span></h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div id="deposit" class="col-md-6">
+                    <div class=" shadow-lg bg-body-tertiary rounded text-area g-3">
+                        <h3 class=" mb-3">Deposit</h3>
+                        <input id="depositAmount" type="number" class="form-control mb-2" placeholder="$ enter amount to deposit">
+                        <div id="depositError" class="text-danger"></div>
+                        <button id="depositBtn" class="btn btn-success mt-2">Deposit</button>
+                    </div>
+                </div>
+
+                <div id="withdraw" class="col-md-6">
+                    <div class=" shadow-lg bg-body-tertiary rounded text-area g-3">
+                        <h3 class="mb-3">Withdraw</h3>
+                        <input id="withdrawAmount" type="number" class="form-control mb-2" placeholder="$ enter amount to Withdraw">
+                        <div id="withdrawError" class="text-danger"></div>
+                        <button id="withdrawBtn" class="btn btn-success mt-2">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
